@@ -22,7 +22,7 @@ weatherForm.addEventListener('submit', (e) => {
                 successMessage.textContent = ''
             }else{
                 errorMessage.textContent = ''
-                successMessage.textContent = 'Weather forecast for '+data.Address+ ' is ' +data.forecast+ ' and the location is '+data.location
+                successMessage.textContent = 'Weather forecast for '+data.Address+ ' is ' +data.forecast+ ' and it feels like '+data.feelslike +' with humidity '+data.humidity
             }
         })
     })

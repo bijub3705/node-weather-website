@@ -83,12 +83,11 @@ app.get('/weather',(req, res) =>{
             }
             res.send({
                 forecast: forecastData.forcast,
-                location: forecastData.feelslike,
-                Address: req.query.address
+                feelslike: forecastData.feelslike,
+                humidity: forecastData.humidity,
+                Address: location
             })
         })      
-    
-        console.log('Testing log in geocode')
     })  
 
 
